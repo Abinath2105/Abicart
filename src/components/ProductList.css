@@ -1,0 +1,49 @@
+/* components/ProductList.css */
+.product-list {
+  margin-top: 20px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.product-table th {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  position: sticky;
+  top: 0;
+}
+
+.product-table td {
+  padding: 15px 20px;
+  vertical-align: top;
+}
+
+@media (max-width: 1024px) {
+  .grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .product-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .product-table th,
+  .product-table td {
+    white-space: nowrap;
+    min-width: 150px;
+  }
+  
+  .action-cell {
+    min-width: 120px;
+  }
+}
