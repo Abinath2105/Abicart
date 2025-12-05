@@ -72,7 +72,7 @@ const Header = ({ user, onLoginClick, onLogout, cartCount, onCartClick, onCatego
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>ShopCart</h1>
+          <h1>AbiCart</h1>
           <span className="tagline">India's Online Shopping Destination</span>
         </div>
         
