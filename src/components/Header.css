@@ -1,5 +1,5 @@
 /* components/Header.css */
-.header {
+ .header {
   background: linear-gradient(to bottom, #2874f0, #1a5dc1);
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -120,7 +120,6 @@
 
 
 
-/* Add these styles to components/Header.css */
 .user-profile {
   display: flex;
   align-items: center;
@@ -222,5 +221,281 @@
   
   .category-btn i {
     font-size: 14px;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* components/Header.css */
+.header {
+  background: linear-gradient(to bottom, #2874f0, #1a5dc1);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.tagline {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.user-email {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.login-btn, .cart-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.login-btn:hover, .cart-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category-btn {
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.category-btn:hover {
+  color: #2874f0;
+}
+
+.category-btn.active {
+  color: #2874f0;
+  background: rgba(40, 116, 240, 0.1);
+  border-radius: 20px;
+}
+
+.cart-count {
+  background: #ff6161;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.categories {
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.categories ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.categories li {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .logo-container {
+    justify-content: center;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-text h1 {
+    font-size: 24px;
+  }
+  
+  .tagline {
+    font-size: 11px;
+  }
+  
+  .user-details {
+    display: none;
+  }
+  
+  .header-btn span {
+    display: none;
+  }
+  
+  .header-btn {
+    padding: 10px;
+  }
+  
+  .header-btn i {
+    margin: 0;
+  }
+  
+  .categories ul {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .category-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .category-btn i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text h1 {
+    font-size: 20px;
+  }
+  
+  .tagline {
+    font-size: 10px;
+  }
+  
+  .category-btn span {
+    display: none;
+  }
+  
+  .category-btn {
+    padding: 8px;
+  }
+  
+  .category-btn i {
+    font-size: 16px;
   }
 }
